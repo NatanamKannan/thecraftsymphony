@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Craft Symphony | Handcrafted, Crafted for You</title>
+<meta name="description" content="The Craft Symphony is a new home for handcrafted pieces made by skilled hands, rooted in tradition and crafted for you. Launching soon.">
+<link rel="canonical" href="https://www.thecraftsymphony.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Craft Symphony">
+<meta property="og:title" content="The Craft Symphony | Crafted for You">
+<meta property="og:description" content="A new home for handcrafted pieces made by skilled hands. Launching soon.">
+<meta property="og:url" content="https://www.thecraftsymphony.com/">
+<meta property="og:image" content="https://www.thecraftsymphony.com/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#BE633C">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"The Craft Symphony","url":"https://www.thecraftsymphony.com/","logo":"https://www.thecraftsymphony.com/assets/logo-tagline-color.png","slogan":"Crafted for You","email":"info@aaththi.com","parentOrganization":{"@type":"Organization","name":"Aaththi Enterprises","url":"https://www.aaththi.com/"}}
+</script>
+<style>
+/* The Craft Symphony: colours from the brand guide.
+   Pure White #FFFFFF, Copper Brown #BE633C, Sandstone Beige #D29C6A,
+   Moss Green #546031, Jet Black #000000. Solid colours only, no gradients. */
+:root {
+  --white: #ffffff;
+  --copper: #be633c;
+  --copper-text: #9e4e2c;   /* deeper copper for small text on light backgrounds */
+  --sand: #d29c6a;
+  --moss: #546031;
+  --black: #000000;
+  --ink: #1a1a1a;
+  --ink-2: #4d4d4d;
+  --paper: #fbf6ef;         /* very light sandstone tint for quiet sections */
+  --line: #ecdfcf;
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Quicksand", "Segoe UI", system-ui, sans-serif;
+  --wrap: 1160px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--white); color: var(--ink); font: 500 17px/1.7 var(--sans); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--copper-text); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.12; margin: 0 0 .45em; }
+h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); letter-spacing: -.01em; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: 1.6rem; }
+p { margin: 0 0 1em; }
+.eyebrow { display: inline-block; font: 700 .76rem var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--copper-text); margin-bottom: 1.1em; }
+.lead { font-size: 1.15rem; color: var(--ink-2); max-width: 34em; }
+
+.btn { display: inline-flex; align-items: center; gap: .6em; padding: .95em 1.8em; border-radius: 999px; font: 600 1rem var(--sans); text-decoration: none; border: 1.5px solid transparent; transition: background-color .2s, color .2s, transform .2s; cursor: pointer; }
+.btn:hover { transform: translateY(-1px); }
+.btn-moss { background: var(--moss); color: #fff; }
+.btn-moss:hover { background: #46512a; }
+.btn-line { border-color: var(--ink); color: var(--ink); }
+.btn-line:hover { background: var(--ink); color: #fff; }
+.btn-white { background: #fff; color: var(--moss); }
+.btn-white:hover { background: var(--paper); }
+.btn svg { width: 1.1em; height: 1.1em; }
+
+/* Header */
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.nav { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand img { width: 44px; }
+.brand span { font: 500 1.45rem var(--serif); white-space: nowrap; }
+.nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; align-items: center; }
+.nav ul a { text-decoration: none; font-weight: 600; font-size: .95rem; }
+.nav ul a:not(.btn):hover { color: var(--copper-text); }
+.nav .btn { padding: .6em 1.2em; font-size: .9rem; }
+@media (max-width: 760px) { .nav ul li:not(:last-child) { display: none; } .brand span { font-size: 1.2rem; } .brand img { width: 38px; } }
+@media (max-width: 380px) { .brand span { display: none; } }
+
+/* Hero */
+.hero { padding: 72px 0 88px; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: .55em; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: .35em 1em; font-size: .85rem; font-weight: 600; margin-bottom: 26px; }
+.pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--copper); display: block; }
+.hero h1 em { font-style: italic; color: var(--copper); }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.hero-art { position: relative; aspect-ratio: 1 / 1; display: grid; place-items: center; }
+.hero-art .disc { position: absolute; inset: 4%; border-radius: 50%; background: var(--paper); }
+.hero-art .ring { position: absolute; inset: 0; border-radius: 50%; border: 1.5px dashed var(--sand); animation: spin 90s linear infinite; }
+.hero-art img { position: relative; width: 70%; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 880px) { .hero { padding: 40px 0 56px; } .hero-grid { grid-template-columns: 1fr; gap: 40px; } .hero-art { max-width: 380px; margin: 0 auto; width: 100%; } }
+
+/* Copper story band */
+.band { background: var(--copper); color: #fff; padding: 88px 0; }
+.band-grid { display: grid; grid-template-columns: 260px 1fr; gap: 64px; align-items: center; }
+.band img { width: 240px; }
+.band h2 { color: #fff; font-size: clamp(2.1rem, 4.4vw, 3.3rem); }
+.band p { font-size: 1.15rem; max-width: 36em; color: #fff; }
+@media (max-width: 760px) { .band { padding: 60px 0; } .band-grid { grid-template-columns: 1fr; gap: 28px; } .band img { width: 140px; } }
+
+/* Sections */
+.section { padding: 96px 0; }
+.section.paper { background: var(--paper); }
+.head { max-width: 640px; margin-bottom: 44px; }
+@media (max-width: 700px) { .section { padding: 64px 0; } }
+
+/* Craft cards */
+.crafts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.craft { border-radius: 18px; padding: 30px 26px 28px; min-height: 280px; display: flex; flex-direction: column; }
+.craft svg { width: 46px; height: 46px; margin-bottom: auto; }
+.craft h3 { margin: 28px 0 .3em; }
+.craft p { margin: 0; font-size: .97rem; }
+.c-copper { background: var(--copper); color: #fff; }
+.c-moss { background: var(--moss); color: #fff; }
+.c-sand { background: var(--sand); color: var(--black); }
+.c-black { background: var(--black); color: #fff; }
+.c-black svg { color: var(--sand); }
+@media (max-width: 980px) { .crafts { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .crafts { grid-template-columns: 1fr; } .craft { min-height: 0; } .craft h3 { margin-top: 20px; } }
+.note { font-size: .9rem; color: var(--ink-2); margin-top: 22px; }
+
+/* Promise */
+.promise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.promise div { border-top: 2px solid var(--copper); padding-top: 22px; }
+.promise .num { font: italic 500 1.1rem var(--serif); color: var(--copper-text); }
+.promise h3 { margin-top: .3em; }
+.promise p { color: var(--ink-2); margin: 0; }
+@media (max-width: 820px) { .promise { grid-template-columns: 1fr; gap: 28px; } }
+
+/* Notify */
+.notify { background: var(--moss); color: #fff; border-radius: 26px; padding: 64px 56px; display: grid; grid-template-columns: 1.3fr auto; gap: 32px; align-items: center; }
+.notify h2 { color: #fff; margin-bottom: .25em; }
+.notify p { margin: 0; color: #e8ecdc; max-width: 34em; }
+@media (max-width: 760px) { .notify { grid-template-columns: 1fr; padding: 44px 26px; } }
+
+/* Footer */
+footer { background: var(--black); color: #d8d0c4; padding: 64px 0 30px; }
+.foot { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; align-items: start; }
+.foot img { width: 200px; }
+footer h2 { font: 700 .76rem var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--sand); margin-bottom: 14px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer li { margin-bottom: 9px; }
+footer a { color: #f3ede4; text-decoration: none; }
+footer a:hover { color: var(--sand); }
+.foot-bottom { border-top: 1px solid #2b2b2b; margin-top: 44px; padding-top: 22px; font-size: .85rem; color: #9a9389; }
+@media (max-width: 760px) { .foot { grid-template-columns: 1fr; gap: 30px; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="./" aria-label="The Craft Symphony home">
+      <img src="assets/mark-color.png" alt="" width="44" height="45">
+      <span>The Craft Symphony</span>
+    </a>
+    <ul>
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#crafts">Crafts</a></li>
+      <li><a href="#promise">Our promise</a></li>
+      <li><a class="btn btn-moss" href="#notify">Get updates</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill"><i></i>Our first collection is in the making</span>
+        <h1>Handmade pieces, <em>crafted for you</em></h1>
+        <p class="lead">The Craft Symphony brings together the work of skilled hands: traditional techniques, natural materials and the small imperfections that make every handmade piece one of a kind.</p>
+        <div class="actions">
+          <a class="btn btn-moss" href="#notify">Be the first to know</a>
+          <a class="btn btn-line" href="#story">Our story</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="disc"></span><span class="ring"></span>
+        <img src="assets/mark-color.png" alt="" width="669" height="689" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="story">
+    <div class="wrap band-grid">
+      <img src="assets/mark-white.png" alt="" width="240" height="247" loading="lazy">
+      <div>
+        <span class="eyebrow" style="color:#fff">Our story</span>
+        <h2>Many hands, one symphony</h2>
+        <p>Our mark shows six hands moving together in a circle. That&rsquo;s what a handmade piece is to us: many skills, generations of tradition and a lot of patience, coming together in harmony.</p>
+        <p style="margin:0">The Craft Symphony is our way of carrying that work from the maker&rsquo;s hands to yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="crafts">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Crafts we&rsquo;re exploring</span>
+        <h2>A collection taking shape</h2>
+        <p class="lead">We&rsquo;re taking our time to find the right crafts and the right makers. These are the areas we&rsquo;re exploring for our first collections.</p>
+      </div>
+      <div class="crafts">
+        <article class="craft c-copper">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 38 38 10"/><circle cx="38" cy="10" r="3"/><path d="M8 24c6-2 10 2 16 0s10-6 16-4"/><path d="M8 32c6-2 10 2 16 0s10-6 16-4"/></svg>
+          <h3>Textiles &amp; embroidery</h3>
+          <p>Hand embroidery, woven fabrics and printed textiles.</p>
+        </article>
+        <article class="craft c-moss">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8h16"/><path d="M18 8c0 6-8 9-8 20a14 14 0 0 0 28 0c0-11-8-14-8-20"/><path d="M12 26h24"/></svg>
+          <h3>Home d&eacute;cor</h3>
+          <p>Pottery, woodwork and decorative pieces for the home.</p>
+        </article>
+        <article class="craft c-sand">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="18" width="32" height="22" rx="2"/><path d="M6 12h36v6H6z"/><path d="M24 12v28"/><path d="M24 12c-3-6-10-6-10-1s10 1 10 1 10 4 10-1-7-5-10 1"/></svg>
+          <h3>Handmade gifts</h3>
+          <p>Thoughtful keepsakes for the people and moments that matter.</p>
+        </article>
+        <article class="craft c-black">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c3 7 9 9 16 9-1 13-7 23-16 27C15 38 9 28 8 15c7 0 13-2 16-9Z"/><path d="M24 16v20"/><path d="M18 24l6 5 6-5"/></svg>
+          <h3>Heritage crafts</h3>
+          <p>Traditional art forms, made the way they always have been.</p>
+        </article>
+      </div>
+      <p class="note">Our first collections are still being chosen, so the final range may differ.</p>
+    </div>
+  </section>
+
+  <section class="section paper" id="promise">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Our promise</span>
+        <h2>What every piece will stand for</h2>
+      </div>
+      <div class="promise">
+        <div>
+          <span class="num">i.</span>
+          <h3>Made by hand</h3>
+          <p>Pieces shaped by people, not production lines, so each one carries the touch of its maker.</p>
+        </div>
+        <div>
+          <span class="num">ii.</span>
+          <h3>Rooted in tradition</h3>
+          <p>Crafts and techniques passed down through generations, kept alive in everyday objects.</p>
+        </div>
+        <div>
+          <span class="num">iii.</span>
+          <h3>Crafted for you</h3>
+          <p>Chosen with care, so the piece you receive feels personal and is made to be kept.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="notify">
+    <div class="wrap">
+      <div class="notify">
+        <div>
+          <h2>Be the first to know</h2>
+          <p>Leave us a note and we&rsquo;ll tell you when our first collection launches.</p>
+        </div>
+        <a class="btn btn-white" href="mailto:info@aaththi.com?subject=The%20Craft%20Symphony%20%E2%80%93%20launch%20updates&amp;body=Hello%2C%0A%0APlease%20let%20me%20know%20when%20The%20Craft%20Symphony%20launches.%0A%0AThank%20you!">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email us for updates
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="assets/logo-tagline-white.png" alt="The Craft Symphony, Crafted for You" width="200" height="159">
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:info@aaththi.com">info@aaththi.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>A brand of</h2>
+        <ul>
+          <li><a href="https://www.aaththi.com/" target="_blank" rel="noopener">Aaththi Enterprises</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">&copy; <span id="y">2026</span> The Craft Symphony&trade;, Aaththi Enterprises. All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
